@@ -38,5 +38,4 @@ desktop.ini
 # Arquivos de configuração do sistema
 *.sublime-workspace
 
-# Ignorar arquivo de saída padrão do GCC
-a.out
+
