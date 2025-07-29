@@ -1,0 +1,42 @@
+# Arquivos de compilação
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# Arquivos de dependência
+*.d
+
+# Backups e arquivos temporários
+*~
+*.tmp
+*.swp
+*.bak
+
+# Diretórios de build comuns
+/build/
+/bin/
+/debug/
+/release/
+
+# Arquivos de log
+*.log
+
+# Arquivos gerados por IDEs
+.vscode/
+*.code-workspace
+*.idea/
+*.DS_Store
+
+# Arquivos de sistema
+Thumbs.db
+desktop.ini
+# Arquivos de configuração do sistema
+*.sublime-workspace
+
+# Ignorar arquivo de saída padrão do GCC
+a.out
