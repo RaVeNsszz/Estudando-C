@@ -7,6 +7,14 @@ void trocar(int *a, int *b) {
     *a = *b;
     *b = temp;
 }
+// Função para comparar dois valores inteiros e retornar o maior e o menor
+void comparar(int *maior, int *menor) {
+    if (*maior < *menor) {
+        int temp = *maior;
+        *maior = *menor;
+        *menor = temp;
+    }
+}
 
 int main(){
     // Exercício de Fixação
@@ -61,11 +69,24 @@ int main(){
     q3 - Faca um programa que leia 2 valores inteiros e chame uma funcao que receba estas 2 
     variaveis e troque o seu conteudo, ou seja, esta funcao e chamada passando duas variaveis
     A e B por exemplo e, apos a execucao da funcao, A contera o valor de B e B tera o valor de A.
-    */
+    
     int a = 5, b = 10;
     printf("Antes da troca: A = %d, B = %d\n", a, b);
     trocar(&a, &b);
     printf("Depois da troca: A = %d, B = %d\n", a, b);
+    */
+    /*
+    q4 - Faca um programa que leia dois valores inteiros e chame uma funcao que receba estes 2 
+    valores de entrada e retorne o maior valor na primeira variavel e o menor valor na segunda 
+    variavel. Escreva o conteudo das 2 variaveis na tela.
+    */
+    int x, y;
+    printf("Digite dois valores inteiros: ");
+    scanf("%d %d", &x, &y);
+    comparar(&x, &y);
+    printf("Maior: %d, Menor: %d\n", x, y);
+    
+
 
     return 0; 
 }
